@@ -1,0 +1,66 @@
+body{
+    background-color:rgb(252, 252, 231);
+}
+.Lcontainer{
+   display:flex;
+   background-color: white;  
+   height:200px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin:0 35% 0 35%;
+  }   
+  button{       
+      width: 80px;
+      height:auto;
+      padding:2px;
+      margin-bottom:4px; 
+      background-color: rgb(241, 227, 148);   
+  }  
+  h1{
+    font-style: oblique;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 40px;
+  }
+  input[type=text], input[type=password] {   
+    width: 60%;
+    padding: 4px;
+    margin: 0 10px 10px 10px;
+    display:block;    
+    background-color: rgb(250, 250, 246); 
+}
+/*input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(248, 234, 194); 
+}*/
+.modal {
+  display: none;
+  position: fixed;
+  left:2;
+  top: 0;
+  width: 50%; 
+  height:auto; 
+  background-color:rgb(245, 245, 211);
+  padding-top: 50px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(206, 174, 115);
+  width: 60%; 
+  padding:20px;
+}
+.signupbtn {
+  float: left;
+  width: 25%;
+  height: 25px;
+  margin-bottom:25px; 
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #535151;
+}
