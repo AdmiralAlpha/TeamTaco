@@ -6,3 +6,21 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+function validate(){
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+  valide = false;
+
+  let usernameArray = ["user"];
+  let passwordArray = ["pass"];
+
+
+      if (username==usernameArray[0] && password==passwordArray[0]){
+          window.location = "index.html";
+
+
+      }
+
+
+
+      }

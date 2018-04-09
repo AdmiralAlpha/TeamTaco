@@ -12,10 +12,47 @@
   <h1>iCollect</h1>
  </div>
   <div class="Lcontainer">
-    <input type="text" name="" value="">
-    <input type="text" name="" value="">
+    <h3>Login</h3>
+
+    <form action="index.html">
+      <div class="login">
+      <label class="fnask" for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label class="fnask" for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <button onclick="document.getElementById('id01').style.display='block'">Sign up</button>
+    </form>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h4>Sign Up</h4>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+        </div>
+      </form>
+    </div>
   </div>
 
+  </div>
 <p></p>
+<script src="login.js"></script>
 </body>
 </html>
